@@ -1,0 +1,25 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "learning webpack and module bundler",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "webpacks",
+    "webpack-config",
+    "react",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "san",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
+
+
