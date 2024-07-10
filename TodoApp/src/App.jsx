@@ -20,47 +20,44 @@ const App = () => {
   let handleSubmit = (e) => {
     e.preventDefault();
     try {
-      // console.log(state); 
+      // console.log(state);
 
       let newItem = {
-        id:state.id,
-        course:state.course,
-        trainer:state.trainer
-      }
+        id: state.id,
+        course: state.course,
+        trainer: state.trainer,
+      };
 
-      let updatedItem = [...state.items,newItem];
-      console.log(updatedItem)
+      let updatedItem = [...state.items, newItem];
+      // console.log(updatedItem)
 
       setState({
         items: updatedItem,
-        course:"",
-        trainer:"",
-        id:uuid()
-      })
-
+        course: "",
+        trainer: "",
+        id: uuid(),
+      });
     } catch (err) {
       console.log(err);
     }
   };
 
- 
-  let handleDelete = (id)=>{
-    let fileteredItem = state.items.filter(item => item.id !=id);
-    setState({items:fileteredItem})
-  }
+  let handleDelete = (id) => {
+    let fileteredItem = state.items.filter((item) => item.id != id);
+    setState({ items: fileteredItem });
+  };
 
-  let handleEdit =(id)=>{
-    let fileteredItem = state.items.filter(item=> item.id!=id);
-    let selectedItem = state.items.find(item=>item.id === id);
+  let handleEdit = (id) => {
+    let fileteredItem = state.items.filter((item) => item.id != id);
+    let selectedItem = state.items.find((item) => item.id === id);
 
     setState({
-      items:fileteredItem,
-      course:selectedItem.course,
-      trainer:selectedItem.trainer,
-      id:selectedItem.id
-    })
-
-  }
+      items: fileteredItem,
+      course: selectedItem.course,
+      trainer: selectedItem.trainer,
+      id: selectedItem.id,
+    });
+  };
   return (
     <section id="mainBlock">
       <article>
@@ -75,7 +72,11 @@ const App = () => {
             handleChange={handleChange}
             handleSubmit={handleSubmit}
           />
-          <TodoList items={state.items} handleDelete={handleDelete} handleEdit={handleEdit}/>
+          <TodoList
+            items={state.items}
+            handleDelete={handleDelete}
+            handleEdit={handleEdit}
+          />
         </main>
       </article>
     </section>
