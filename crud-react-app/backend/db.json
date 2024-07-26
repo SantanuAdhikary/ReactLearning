@@ -1,0 +1,44 @@
+{
+  "course": [
+    {
+      "title": "nodejs",
+      "trainer": "santanu",
+      "description": "slsa",
+      "id": "1"
+    },
+    {
+      "title": "react",
+      "trainer": "sreenu",
+      "description": "js library",
+      "id": "52d6"
+    },
+    {
+      "id": "0539",
+      "title": "mongodb",
+      "trainer": "utkarsh",
+      "description": "database",
+      "createdAt": "2024-07-13"
+    },
+    {
+      "id": "9f8e",
+      "title": "html",
+      "trainer": "pooja",
+      "description": "frontend",
+      "createdAt": "2024-07-01"
+    },
+    {
+      "id": "76c8",
+      "title": "java",
+      "trainer": "dixit",
+      "description": "afkaljf;a",
+      "createdAt": "2024-07-13"
+    },
+    {
+      "id": "6030",
+      "title": "express",
+      "trainer": "akshay",
+      "description": "node framework",
+      "createdAt": "2024-07-11"
+    }
+  ]
+}
